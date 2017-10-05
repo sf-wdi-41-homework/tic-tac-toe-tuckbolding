@@ -1,8 +1,34 @@
 #board {
   margin-top: 10px;
+  background-color: rgb(135, 255, 189);
 }
 
 .box {
   border: 1px solid black;
   height: 150px;
 }
+
+.row {
+  border:;
+}
+
+body {
+  background-color: rgb(135, 221, 255);
+}
+
+h1 {
+  font-family: 'Germania One', cursive;
+  font-size: 52px;
+
+}
+
+.reset {
+    background:#555;
+    border:1px solid #333;
+    padding:5px 10px;
+    color:#FFF;
+    cursor:pointer;
+    font-family:"Roboto", Arial, sans-serif;
+    text-transform:uppercase;
+    &:hover {
+      opacity:0.8;
