@@ -1,4 +1,5 @@
   var turns = 0;
+  var win = false;
   // var player1img = 'images/X.png';
   // var player2img = 'images/O.png';
 
@@ -7,12 +8,14 @@ $(document).ready(function() {
     $('.reset').on("click", function(){
       console.log("reset button clicked!");
       $(".box").text("");
+      win = false;
     });
 
-    // $('.col-md-4 box').on('click').append('<img src="'+players.image+'">');
+    /*$('.col-md-4 box').on('click').append('<img src="'+players.image+'">');*/
     $('.box').on('click', function(){
+      $(this).text()==="" && win ===false;
     //check that click worked
-    console.log("Box was clicked!");
+      console.log("Box was clicked!");
         if(turns % 2 ===0){
           //draw an 'x'
           $(this).text('X');
@@ -42,6 +45,8 @@ $(document).ready(function() {
     ){
       alert("Winner!");
       console.log("Winner!");
+      win = true;
+
     } else if ( $(".1").text() !== "" && $(".2").text() !== "" && $(".3").text() !== ""
           && $(".4").text() !== "" && $(".5").text() !== "" && $(".6").text() !== ""
           && $(".7").text() !== "" && $(".8").text() !== "" && $(".9").text() !== ""
