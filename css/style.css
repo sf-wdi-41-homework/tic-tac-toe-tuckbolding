@@ -28,7 +28,10 @@ h1 {
     padding:5px 10px;
     color:#FFF;
     cursor:pointer;
+    float:;
     font-family:"Roboto", Arial, sans-serif;
     text-transform:uppercase;
     &:hover {
       opacity:0.8;
+    }
+}
